@@ -14,7 +14,9 @@
 
 <body>
 
-  <header class="header">
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="header" id="siteHeader">
     <div class="header__container">
       <a href="#" class="header__logo">
         <span class="header__logo-icon">&lt;/&gt;</span>
@@ -37,6 +39,7 @@
   <main>
 
     <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__container">
         <div class="hero__content">
           <p class="hero__eyebrow">// desenvolvedor freelancer</p>
@@ -53,15 +56,15 @@
 
           <div class="hero__metrics">
             <div class="hero__metric">
-              <span class="hero__metric-number">6+</span>
+              <span class="hero__metric-number" data-count-to="6" data-suffix="+">0</span>
               <span class="hero__metric-label">anos de experiência</span>
             </div>
             <div class="hero__metric">
-              <span class="hero__metric-number">42</span>
+              <span class="hero__metric-number" data-count-to="42">0</span>
               <span class="hero__metric-label">projetos entregues</span>
             </div>
             <div class="hero__metric">
-              <span class="hero__metric-number">18</span>
+              <span class="hero__metric-number" data-count-to="18">0</span>
               <span class="hero__metric-label">clientes satisfeitos</span>
             </div>
           </div>
@@ -90,49 +93,62 @@
 
     <section id="sobre" class="about">
       <div class="about__container">
-        <p class="section-eyebrow">// sobre mim</p>
-        <h2 class="section-title">Tecnologia com propósito, design com significado.</h2>
 
-        <p class="about__text">
-          Sou Lucas Maia, estudante de Ciência da Computação no IFNMG, Campus Montes Claros, e desenvolvo sites
-          estáticos para pequenos negócios da região. Trabalho com HTML, CSS e JavaScript puros, sem frameworks
-          pesados, porque isso significa sites mais rápidos e mais baratos de manter pros meus clientes. Gosto de
-          entender a fundo o problema de cada cliente antes de sair codando, e todo contato é direto, via WhatsApp,
-          do orçamento à entrega.
-        </p>
-
-        <div class="about__tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Electron</span>
-          <span class="tag">React Native</span>
+        <div class="about__media reveal">
+          <div class="about__frame" aria-hidden="true"></div>
+          <img src="img/perfil.png" alt="Ilustração de Lucas Maia" class="about__photo">
+          <div class="about__badge">
+            <span class="hero__status-dot"></span>
+            Disponível para novos projetos
+          </div>
         </div>
+
+        <div class="about__content">
+          <p class="section-eyebrow reveal">// sobre mim</p>
+          <h2 class="section-title reveal" style="--reveal-i:1">Tecnologia com propósito, design com significado.</h2>
+
+          <p class="about__text reveal" style="--reveal-i:2">
+            Sou Lucas Maia, estudante de Ciência da Computação no IFNMG, Campus Montes Claros, e desenvolvo sites
+            estáticos para pequenos negócios da região. Trabalho com HTML, CSS e JavaScript puros, sem frameworks
+            pesados, porque isso significa sites mais rápidos e mais baratos de manter pros meus clientes. Gosto de
+            entender a fundo o problema de cada cliente antes de sair codando, e todo contato é direto, via WhatsApp,
+            do orçamento à entrega.
+          </p>
+
+          <div class="about__tags reveal" style="--reveal-i:3">
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Electron</span>
+            <span class="tag">React Native</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <section id="servicos" class="services">
       <div class="services__container">
-        <p class="section-eyebrow">// como posso ajudar</p>
-        <h2 class="section-title">Soluções para diferentes desafios</h2>
+        <p class="section-eyebrow reveal">// como posso ajudar</p>
+        <h2 class="section-title reveal" style="--reveal-i:1">Soluções para diferentes desafios</h2>
 
         <div class="services__grid">
-          <article class="card card--service">
+          <article class="card card--service reveal" style="--reveal-i:2">
             <span class="card__icon">⌘</span>
             <h3 class="card__title">Sistemas Web</h3>
             <p class="card__text">Plataformas, painéis administrativos e e-commerces.</p>
             <a href="#" class="card__link">Saiba mais</a>
           </article>
 
-          <article class="card card--service">
+          <article class="card card--service reveal" style="--reveal-i:3">
             <span class="card__icon">▣</span>
             <h3 class="card__title">Aplicações Mobile</h3>
             <p class="card__text">Apps para Android e iOS.</p>
             <a href="#" class="card__link">Saiba mais</a>
           </article>
 
-          <article class="card card--service">
+          <article class="card card--service reveal" style="--reveal-i:4">
             <span class="card__icon">▤</span>
             <h3 class="card__title">Aplicações Desktop</h3>
             <p class="card__text">Apps instaláveis para Windows, macOS e Linux com suporte offline.</p>
@@ -145,13 +161,13 @@
 
     <section id="projetos" class="portfolio">
       <div class="portfolio__container">
-        <p class="section-eyebrow">// portfólio</p>
-        <h2 class="section-title">Projetos que fazem a diferença</h2>
+        <p class="section-eyebrow reveal">// portfólio</p>
+        <h2 class="section-title reveal" style="--reveal-i:1">Projetos que fazem a diferença</h2>
 
         <div class="portfolio__grid">
 
 
-          <article class="card card--project">
+          <article class="card card--project reveal" style="--reveal-i:2">
             <div class="card__preview">
               <div class="preview__stat">
                 <span class="preview__stat-label">Receita mensal</span>
@@ -168,7 +184,7 @@
           </article>
 
 
-          <article class="card card--project">
+          <article class="card card--project reveal" style="--reveal-i:3">
             <div class="card__preview">
               <div class="preview__item">Café especial</div>
               <div class="preview__item">Combo manhã</div>
@@ -179,7 +195,7 @@
           </article>
 
 
-          <article class="card card--project">
+          <article class="card card--project reveal" style="--reveal-i:4">
             <div class="card__preview">
               <div class="preview__item">Seg: Reunião cliente</div>
               <div class="preview__item">Qua: Entrega Sprint 4</div>
@@ -196,26 +212,26 @@
 
     <section class="process">
       <div class="process__container">
-        <p class="section-eyebrow">// meu processo</p>
-        <h2 class="section-title">Do desafio à solução</h2>
+        <p class="section-eyebrow reveal">// meu processo</p>
+        <h2 class="section-title reveal" style="--reveal-i:1">Do desafio à solução</h2>
 
         <div class="process__grid">
-          <div class="process__step">
+          <div class="process__step reveal" style="--reveal-i:2">
             <span class="process__number">01</span>
             <h3 class="process__title">Descoberta</h3>
             <p class="process__text">Entendimento da ideia e do público-alvo.</p>
           </div>
-          <div class="process__step">
+          <div class="process__step reveal" style="--reveal-i:3">
             <span class="process__number">02</span>
             <h3 class="process__title">Planejamento</h3>
             <p class="process__text">Definição de escopo, tecnologias e cronograma.</p>
           </div>
-          <div class="process__step">
+          <div class="process__step reveal" style="--reveal-i:4">
             <span class="process__number">03</span>
             <h3 class="process__title">Desenvolvimento</h3>
             <p class="process__text">Transformação do plano em código funcional e seguro.</p>
           </div>
-          <div class="process__step">
+          <div class="process__step reveal" style="--reveal-i:5">
             <span class="process__number">04</span>
             <h3 class="process__title">Entrega</h3>
             <p class="process__text">Publicação e acompanhamento de evolução.</p>
@@ -229,13 +245,13 @@
 
   <footer id="contato" class="footer">
     <div class="footer__container">
-      <h2 class="footer__title">Tem uma ideia? Vamos conversar.</h2>
+      <h2 class="footer__title reveal">Tem uma ideia? Vamos conversar.</h2>
 
-      <div class="footer__contacts">
+      <div class="footer__contacts reveal" style="--reveal-i:1">
         <a href="mailto:emanuellucas72902@gmail.com" class="btn btn--primary">emanuellucas72902@gmail.com</a>
         <a href="https://wa.me/5538991726001" class="btn btn--secondary" target="_blank" rel="noopener">(38) 99172-6001</a>
       </div>
-      <p class="footer__response-time">Respondo pessoalmente em até 24h.</p>
+      <p class="footer__response-time reveal" style="--reveal-i:2">Respondo pessoalmente em até 24h.</p>
 
       <div class="footer__bottom">
         <p class="footer__copy">© 2026 Lucas Maia. Desenvolvido com criatividade e código.</p>
@@ -248,7 +264,9 @@
     </div>
   </footer>
 
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
   <script src="script.js"></script>
 </body>
 
-</html>
+      </html>
