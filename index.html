@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Maia - Desenvolvedor Freelancer</title>
+  <meta name="description" content="Lucas Maia, desenvolvedor freelancer em Montes Claros. Sites, sistemas web, apps mobile e desktop feitos sob medida.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span class="header__logo-icon">&lt;/&gt;</span>
+        <span class="header__logo-name">Lucas Maia</span>
+      </a>
+
+      <nav class="header__nav">
+        <a href="#sobre" class="header__link">Sobre</a>
+        <a href="#servicos" class="header__link">Serviços</a>
+        <a href="#projetos" class="header__link">Projetos</a>
+        <a href="#contato" class="header__link">Contato</a>
+      </nav>
+
+      <button class="header__theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+        <span class="header__theme-icon">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">// desenvolvedor freelancer</p>
+          <h1 class="hero__title">Ideias que ganham vida digital.</h1>
+          <p class="hero__subtitle">
+            Desenvolvo sistemas web, aplicações desktop e aplicativos mobile para
+            transformar desafios reais em soluções simples, eficientes e bonitas.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#projetos" class="btn btn--primary">Conheça meu trabalho</a>
+            <a href="#contato" class="btn btn--secondary">Vamos conversar</a>
+          </div>
+
+          <div class="hero__metrics">
+            <div class="hero__metric">
+              <span class="hero__metric-number">6+</span>
+              <span class="hero__metric-label">anos de experiência</span>
+            </div>
+            <div class="hero__metric">
+              <span class="hero__metric-number">42</span>
+              <span class="hero__metric-label">projetos entregues</span>
+            </div>
+            <div class="hero__metric">
+              <span class="hero__metric-number">18</span>
+              <span class="hero__metric-label">clientes satisfeitos</span>
+            </div>
+          </div>
+
+          <div class="hero__status">
+            <span class="hero__status-dot"></span>
+            Disponível para novos projetos
+          </div>
+        </div>
+
+        <div class="hero__code">
+          <div class="hero__code-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <pre class="hero__code-block"><code><span class="hero__code-kw">const</span> solution = {
+  idea: <span class="hero__code-str">'transformadora'</span>,
+  design: <span class="hero__code-str">'intuitivo'</span>,
+  technology: <span class="hero__code-str">'eficiente'</span>
+};
+<span class="hero__code-comment">// pronto(a) para o próximo desafio</span></code></pre>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">↓</a>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="about__container">
+        <p class="section-eyebrow">// sobre mim</p>
+        <h2 class="section-title">Tecnologia com propósito, design com significado.</h2>
+
+        <p class="about__text">
+          Sou Lucas Maia, estudante de Ciência da Computação no IFNMG, Campus Montes Claros, e desenvolvo sites
+          estáticos para pequenos negócios da região. Trabalho com HTML, CSS e JavaScript puros, sem frameworks
+          pesados, porque isso significa sites mais rápidos e mais baratos de manter pros meus clientes. Gosto de
+          entender a fundo o problema de cada cliente antes de sair codando, e todo contato é direto, via WhatsApp,
+          do orçamento à entrega.
+        </p>
+
+        <div class="about__tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Electron</span>
+          <span class="tag">React Native</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="services">
+      <div class="services__container">
+        <p class="section-eyebrow">// como posso ajudar</p>
+        <h2 class="section-title">Soluções para diferentes desafios</h2>
+
+        <div class="services__grid">
+          <article class="card card--service">
+            <span class="card__icon">⌘</span>
+            <h3 class="card__title">Sistemas Web</h3>
+            <p class="card__text">Plataformas, painéis administrativos e e-commerces.</p>
+            <a href="#" class="card__link">Saiba mais</a>
+          </article>
+
+          <article class="card card--service">
+            <span class="card__icon">▣</span>
+            <h3 class="card__title">Aplicações Mobile</h3>
+            <p class="card__text">Apps para Android e iOS.</p>
+            <a href="#" class="card__link">Saiba mais</a>
+          </article>
+
+          <article class="card card--service">
+            <span class="card__icon">▤</span>
+            <h3 class="card__title">Aplicações Desktop</h3>
+            <p class="card__text">Apps instaláveis para Windows, macOS e Linux com suporte offline.</p>
+            <a href="#" class="card__link">Saiba mais</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projetos" class="portfolio">
+      <div class="portfolio__container">
+        <p class="section-eyebrow">// portfólio</p>
+        <h2 class="section-title">Projetos que fazem a diferença</h2>
+
+        <div class="portfolio__grid">
+
+
+          <article class="card card--project">
+            <div class="card__preview">
+              <div class="preview__stat">
+                <span class="preview__stat-label">Receita mensal</span>
+                <span class="preview__stat-value">R$ 48.920 <small class="preview__stat-delta">+18,4%</small></span>
+              </div>
+              <div class="preview__stat">
+                <span class="preview__stat-label">Pedidos</span>
+                <span class="preview__stat-value">1.284 <small class="preview__stat-delta">+12,8%</small></span>
+              </div>
+            </div>
+            <span class="card__tag">Sistema Web</span>
+            <h3 class="card__title">Nexo Gestão</h3>
+            <p class="card__text">Plataforma de gestão financeira.</p>
+          </article>
+
+
+          <article class="card card--project">
+            <div class="card__preview">
+              <div class="preview__item">Café especial</div>
+              <div class="preview__item">Combo manhã</div>
+            </div>
+            <span class="card__tag">Aplicativo Mobile</span>
+            <h3 class="card__title">Grão App</h3>
+            <p class="card__text">App de pedidos e fidelidade para cafeteria.</p>
+          </article>
+
+
+          <article class="card card--project">
+            <div class="card__preview">
+              <div class="preview__item">Seg: Reunião cliente</div>
+              <div class="preview__item">Qua: Entrega Sprint 4</div>
+              <div class="preview__item">Sex: Fechamento financeiro</div>
+            </div>
+            <span class="card__tag">Aplicação Desktop</span>
+            <h3 class="card__title">Ateliê Pro</h3>
+            <p class="card__text">App de organização de agenda e finanças para autônomos.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="process__container">
+        <p class="section-eyebrow">// meu processo</p>
+        <h2 class="section-title">Do desafio à solução</h2>
+
+        <div class="process__grid">
+          <div class="process__step">
+            <span class="process__number">01</span>
+            <h3 class="process__title">Descoberta</h3>
+            <p class="process__text">Entendimento da ideia e do público-alvo.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">02</span>
+            <h3 class="process__title">Planejamento</h3>
+            <p class="process__text">Definição de escopo, tecnologias e cronograma.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">03</span>
+            <h3 class="process__title">Desenvolvimento</h3>
+            <p class="process__text">Transformação do plano em código funcional e seguro.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">04</span>
+            <h3 class="process__title">Entrega</h3>
+            <p class="process__text">Publicação e acompanhamento de evolução.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer id="contato" class="footer">
+    <div class="footer__container">
+      <h2 class="footer__title">Tem uma ideia? Vamos conversar.</h2>
+
+      <div class="footer__contacts">
+        <a href="mailto:emanuellucas72902@gmail.com" class="btn btn--primary">emanuellucas72902@gmail.com</a>
+        <a href="https://wa.me/5538991726001" class="btn btn--secondary" target="_blank" rel="noopener">(38) 99172-6001</a>
+      </div>
+      <p class="footer__response-time">Respondo pessoalmente em até 24h.</p>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Lucas Maia. Desenvolvido com criatividade e código.</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/lucas-emanuel-rodrigues-silva-maia-b37228209/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/Lucas-Emanuel-360" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.instagram.com/arrobaluquinhas/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
